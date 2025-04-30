@@ -1,0 +1,62 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1744;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+  
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 20%;
+}
+
+/* Home Section */
+#home {
+    
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 100px;
+    color: white;
+    font-style: oblique;
+}
+
+
+button{
+    background-color: black;
+    margin-bottom:10%;
+ 
+    
+}
+button:hover{
+    background-color: green;
+    
+}

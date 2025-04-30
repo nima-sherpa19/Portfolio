@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Ticket Booking System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1744;
+      padding: 30px;
+    }
+
+    h1 {
+        color: rgb(240, 117, 117);
+        font-style: oblique;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      margin: 0 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .tab.active {
+      background-color: #0056b3;
+    }
+
+    .form-container {
+        color: white;
+      max-width: 500px;
+      margin: auto;
+      background: rgb(64, 243, 41);
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    .form-container.active {
+      display: block;
+    }
+.form-container:hover{
+    color: black;
+    background-color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(243, 71, 2, 0.5);
+}
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    
+
+    input, select {
+      width: 95%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #3117f1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0cf43e;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Online Ticket Booking System</h1>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="flight">Flights</div>
+    <div class="tab" data-tab="movie">Movies</div>
+    <div class="tab" data-tab="hotel">Hotels</div>
+  </div>
+
+  <!-- Flights Form -->
+  <div id="flight" class="form-container active">
+    <h2>Book a Flight</h2>
+    <label>From:</label>
+    <input type="text" placeholder="City A">
+    <label>To:</label>
+    <input type="text" placeholder="City B">
+    <label>Date:</label>
+    <input type="date">
+    <button onclick="alert('Flight booked!')">Book Flight</button>
+  </div>
+
+  <!-- Movies Form -->
+  <div id="movie" class="form-container">
+    <h2>Book a Movie</h2>
+    <label>Movie:</label>
+    <input type="text" placeholder="Movie Name">
+    <label>Theatre:</label>
+    <input type="text" placeholder="Theatre Name">
+    <label>Date:</label>
+    <input type="date">
+    <button onclick="alert('Movie booked!')">Book Movie</button>
+  </div>
+
+  <!-- Hotels Form -->
+  <div id="hotel" class="form-container">
+    <h2>Book a Hotel</h2>
+    <label>Location:</label>
+    <input type="text" placeholder="City">
+    <label>Check-in:</label>
+    <input type="date">
+    <label>Check-out:</label>
+    <input type="date">
+    <button onclick="alert('Hotel booked!')">Book Hotel</button>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const forms = document.querySelectorAll('.form-container');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        forms.forEach(form => form.classList.remove('active'));
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

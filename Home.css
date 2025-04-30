@@ -1,0 +1,138 @@
+HOME.CSS
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light Gray Background */
+    color: #333333; /* Dark Gray Text */
+}
+
+
+/* Container for layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #008080; /* Teal Background */
+    color: white;
+    padding: 10px ;
+}
+
+header h1 {
+   
+    display: inline;
+    margin-left: 20px;
+}
+h2{
+    text-align: center;
+}
+#exp{
+    text-align:left;
+
+}
+nav ul {
+    list-style-type: none;
+    display: inline;
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Coral for hover effect */
+}
+
+/* Sections */
+section {
+    padding:1px;
+    text-align: center;
+}
+
+/* CSS for the topics section with background image */
+#topics {
+    background-image: url('./bg1.webp'); /* Path to the background image */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image in the section */
+    background-attachment: fixed; /* Keeps the background fixed */
+    background-repeat: no-repeat; /* Avoids repeating the image */
+    padding: 30px 0; /* Adds padding for spacing */
+    color: #333333; /* Dark text for readability */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+
+/* Grid for Topics */
+.topics-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Topic Items */
+.topic-item {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.topic-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Learn More Button */
+.learn-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Coral Button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.learn-more:hover {
+    background-color: #e95b50; /* Darker shade of coral on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #008080; /* Teal background */
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #e6dfdf; /* White text for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6f61; /* Coral on hover */
+}

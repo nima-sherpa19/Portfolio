@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Language Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Sign Language School</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Tutorial.html">Tutorials</a></li>
+          <li><a href="Reference.html">Reference</a></li>
+          <li><a href="Community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="quiz-section">
+    <h2>Sign Language Quiz</h2>
+
+    <form id="quiz-form">
+      <!-- Reusable Question Box -->
+      <!-- Question 1 -->
+      <div class="question-box" id="question-1">
+        <p>Question 1: What is the sign for 'Hello'?</p>
+        <img src="./imgg/hello.webp" alt="Hello Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q1" value="a" /> No</label>
+          <label><input type="radio" name="q1" value="b" /> Hello</label>
+          <label><input type="radio" name="q1" value="c" /> Yes</label>
+          <label><input type="radio" name="q1" value="d" /> Thank you</label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-box" id="question-2" style="display:none;">
+        <p>Question 2: What is the sign for 'Thank You'?</p>
+        <img src="./imgg/thankyou.png" alt="Thank You Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q2" value="a" /> Thank you</label>
+          <label><input type="radio" name="q2" value="b" /> Yes</label>
+          <label><input type="radio" name="q2" value="c" /> No</label>
+          <label><input type="radio" name="q2" value="d" /> Hello</label>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-box" id="question-3" style="display:none;">
+        <p>Question 3: What is the sign for 'A'?</p>
+        <img src="./imgg/A quiz.png" alt="A Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q3" value="a" /> A</label>
+          <label><input type="radio" name="q3" value="b" /> D</label>
+          <label><input type="radio" name="q3" value="c" /> Z</label>
+          <label><input type="radio" name="q3" value="d" /> L</label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-box" id="question-4" style="display:none;">
+        <p>Question 4: What is the sign for 'Z'?</p>
+        <img src="./imgg/Z quiz.png" alt="Z Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q4" value="a" /> A</label>
+          <label><input type="radio" name="q4" value="b" /> U</label>
+          <label><input type="radio" name="q4" value="c" /> K</label>
+          <label><input type="radio" name="q4" value="d" /> Z</label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question-box" id="question-5" style="display:none;">
+        <p>Question 5: What is the sign for 'W'?</p>
+        <img src="./imgg/W quiz.png" alt="W Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q5" value="a" /> K</label>
+          <label><input type="radio" name="q5" value="b" /> L</label>
+          <label><input type="radio" name="q5" value="c" /> W</label>
+          <label><input type="radio" name="q5" value="d" /> A</label>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question-box" id="question-6" style="display:none;">
+        <p>Question 6: What is the sign for 'Sorry'?</p>
+        <img src="./imgg/sorry quiz.png" alt="Sorry Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q6" value="a" /> Hello</label>
+          <label><input type="radio" name="q6" value="b" /> Sorry</label>
+          <label><input type="radio" name="q6" value="c" /> Thank you</label>
+          <label><input type="radio" name="q6" value="d" /> Smile</label>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question-box" id="question-7" style="display:none;">
+        <p>Question 7: What is the sign for 'N'?</p>
+        <img src="./imgg/N quiz.png" alt="N Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q7" value="a" /> A</label>
+          <label><input type="radio" name="q7" value="b" /> N</label>
+          <label><input type="radio" name="q7" value="c" /> Z</label>
+          <label><input type="radio" name="q7" value="d" /> L</label>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question-box" id="question-8" style="display:none;">
+        <p>Question 8: What is the sign for 'P'?</p>
+        <img src="./imgg/P quiz.png" alt="P Sign" class="question-image" />
+        <div class="options">
+          <label><input type="radio" name="q8" value="a" /> A</label>
+          <label><input type="radio" name="q8" value="b" /> U</label>
+          <label><input type="radio" name="q8" value="c" /> P</label>
+          <label><input type="radio" name="q8" value="d" /> Z</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="submit-section">
+        <button type="submit">Submit Answers</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
